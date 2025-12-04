@@ -28,11 +28,23 @@ def perimeter(r: float):
   return 2 * math.pi * r
 
 class CirceTestCase(unittest.TestCase):
+  '''
+    Overview of the test cases:
+    test_zero_multiplication
+    test_small_multiplication - small float number multiplication
+    test_big_multiplication - tests big number handling
+    test_perimeter
+    test_big_perimeter
+
+    Big numbers are checked up to 3 places
+    Small numbers are checked up to 7 places
+  '''
+
   def test_zero_multiplication(self):
     result = area(0)
     self.assertAlmostEqual(result, 0)
        
-  def test_square_multiplication(self):
+  def test_small_multiplication(self):
     result = area(1.1)
     self.assertAlmostEqual(result, 1.21*math.pi, places=7)
 

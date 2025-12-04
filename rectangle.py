@@ -26,6 +26,15 @@ def perimeter(a: float, b: float):
 
 
 class RectangleTestCase(unittest.TestCase):
+  '''
+    Overview of the test cases:
+    test_zero_multiplication
+    test_square_multiplication - same side test
+    test_big_multiplication - tests big number handling
+    test_perimeter
+    test_big_perimeter
+  '''
+
   def test_zero_multiplication(self):
     result = area(10, 0)
     self.assertEqual(result, 0)
