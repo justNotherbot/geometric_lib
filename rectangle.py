@@ -1,0 +1,35 @@
+import unittest
+
+def area(a: float, b: float):
+  return a*b
+
+def perimeter(a: float, b: float):
+  return 2*(a+b)
+
+
+class RectangleTestCase(unittest.TestCase):
+  def test_zero_multiplication(self):
+    result = area(10, 0)
+    self.assertEqual(result, 0)
+       
+  def test_square_multiplication(self):
+    result = area(10.01, 10)
+    self.assertAlmostEqual(result, 100.1, places=7)
+
+  def test_big_multiplication(self):
+    big_a = 82329389339910
+    big_b = 91092019029019
+    area_expected = big_a * big_b
+    result = area(big_a, big_b)
+    self.assertEqual(result, area_expected)
+
+  def test_perimeter(self):
+    result = perimeter(4, 6)
+    self.assertEqual(result, 20)
+
+  def test_big_perimeter(self):
+    big_a = 17817827818727
+    big_b = 28832389293892
+    perimeter_expected = (big_a + big_b) * 2
+    result = perimeter(big_a, big_b)
+    self.assertEqual(result, perimeter_expected)
