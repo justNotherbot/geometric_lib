@@ -4,9 +4,9 @@ def area(a: float, b: float):
   '''
 		Returns area of a rectangle
 		Parameters:
-		  a,b (float): length of 2 perpendicular sides of the rectangle
+		  a,b (float), positive: length of 2 perpendicular sides of the rectangle
 		Return value:
-		  area (float): area of the rectangle
+		  area (float), positive: area of the rectangle
 		Usage:
 		  r_area = area(side)
 	'''
@@ -16,9 +16,9 @@ def perimeter(a: float, b: float):
   '''
 		Returns perimeter of a rectangle
 		Parameters:
-		  a,b (float): length of 2 perpendicular sides of the rectangle
+		  a,b (float), positive: length of 2 perpendicular sides of the rectangle
 		Return value:
-		  perimeter (float): perimeter of the rectangle
+		  perimeter (float), positive: perimeter of the rectangle
 		Usage:
 		  r_perimeter = perimeter(side)
 	'''

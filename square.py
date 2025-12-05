@@ -4,9 +4,9 @@ def area(a: float):
 	'''
 		Returns area of a square
 		Parameters:
-		  a (float): length of the side of the square
+		  a (float), positive: length of the side of the square
 		Return value:
-		  area (float): area of the square
+		  area (float), positive: area of the square
 		Usage:
 		  s_area = area(side)
 	'''
@@ -17,9 +17,9 @@ def perimeter(a: float):
 	'''
 		Returns perimeter of a square
 		Parameters:
-		  a (float): length of the side of the square
+		  a (float), positive: length of the side of the square
 		Return value:
-		  perimeter (float): perimeter of the square
+		  perimeter (float), positive: perimeter of the square
 		Usage:
 		  s_perimeter = perimeter(side)
 	'''

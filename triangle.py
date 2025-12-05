@@ -4,10 +4,10 @@ def area(base: float, height: float):
   '''
 		Returns area of a triangle
 		Parameters:
-		  base (float): length of the base of the triangle
-      height (float): length of the triangle's height(perpendicular to base)
+		  base (float), positive: length of the base of the triangle
+      height (float), positive: length of the triangle's height(perpendicular to base)
 		Return value:
-		  area (float): area of the triangle
+		  area (float), positive: area of the triangle
 		Usage:
 		  t_area = area(side)
 	'''
@@ -17,9 +17,9 @@ def perimeter(a: float, b: float, c: float):
   '''
 		Returns perimeter of a triangle
 		Parameters:
-		  a,b,c (float): length of three distinct sides of the triangle
+		  a,b,c (float), positive: length of three distinct sides of the triangle
 		Return value:
-		  perimeter (float): perimeter of the triangle
+		  perimeter (float), positive: perimeter of the triangle
 		Usage:
 		  t_perimeter = perimeter(side)
 	'''

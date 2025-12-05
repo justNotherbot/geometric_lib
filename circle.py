@@ -6,9 +6,9 @@ def area(r: float):
   '''
     Returns area of a circle
     Parameters:
-      r (float): length of the radius of the circle
+      r (float), positive: length of the radius of the circle
     Return value:
-      area (float): area of the circle
+      area (float), positive: area of the circle
     Usage:
       c_area = area(radius)
   '''
@@ -19,9 +19,9 @@ def perimeter(r: float):
   '''
 		Returns area of a circle
 		Parameters:
-		  r (float): length of the radius of the circle
+		  r (float), positive: length of the radius of the circle
 		Return value:
-		  perimeter (float): perimeter of the circle
+		  perimeter (float), positive: perimeter of the circle
 		Usage:
 		  c_perimeter = perimeter(radius)
 	'''
