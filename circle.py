@@ -31,6 +31,8 @@ class CirceTestCase(unittest.TestCase):
   '''
     Overview of the test cases:
     test_zero_multiplication
+    test_negative_number_stability_area
+    test_negative_number_stability_perimeter
     test_small_multiplication - small float number multiplication
     test_big_multiplication - tests big number handling
     test_perimeter
@@ -47,6 +49,14 @@ class CirceTestCase(unittest.TestCase):
   def test_small_multiplication(self):
     result = area(1.1)
     self.assertAlmostEqual(result, 1.21*math.pi, places=7)
+
+  def test_negative_number_stability_area(self):
+    result = area(-1.1)
+    self.assertAlmostEqual(result, 1.21*math.pi, places=7)
+
+  def test_negative_number_stability_perimeter(self):
+    result = perimeter(-1.1)
+    self.assertAlmostEqual(result, -1.1*2*math.pi, places=7)
 
   def test_big_multiplication(self):
     big_a = 823293.89339910

@@ -43,6 +43,14 @@ class RectangleTestCase(unittest.TestCase):
     result = area(10.01, 10)
     self.assertAlmostEqual(result, 100.1, places=7)
 
+  def test_negative_number_stability_area(self):
+    result = area(-7, 6)
+    self.assertEqual(result, -42)
+
+  def test_negative_number_stability_perimeter(self):
+    result = perimeter(-7, -6)
+    self.assertEqual(result, -26)
+
   def test_big_multiplication(self):
     big_a = 82329389339910
     big_b = 91092019029019

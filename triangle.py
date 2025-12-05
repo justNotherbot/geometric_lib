@@ -29,6 +29,8 @@ class TriangleTestCase(unittest.TestCase):
   '''
     Overview of the test cases:
     test_zero_multiplication
+    test_negative_number_stability_area
+    test_negative_number_stability_perimeter
     test_square_multiplication - same side test
     test_big_multiplication - tests big number handling
     test_perimeter
@@ -38,6 +40,14 @@ class TriangleTestCase(unittest.TestCase):
   def test_zero_multiplication(self):
     result = area(10, 0)
     self.assertEqual(result, 0)
+
+  def test_negative_number_stability_area(self):
+    result = area(-10, 3)
+    self.assertEqual(result, -15)
+
+  def test_negative_number_stability_perimeter(self):
+    result = perimeter(-10, -3, -8)
+    self.assertEqual(result, -21)
        
   def test_square_multiplication(self):
     result = area(10.5, 10.5)
