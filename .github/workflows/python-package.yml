@@ -19,4 +19,4 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Test with built-in tests
       run: |
-        python -m unittest discover -p "*.py" -v
+        python -m unittest discover -p "*_test.py" -v
